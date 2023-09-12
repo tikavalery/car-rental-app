@@ -5,9 +5,9 @@ function Home(){
 return(
     <div>
         <DefaultLayout>
-          <h2>
+          <h1>
             Home Page
-        </h2>
+        </h1>
         </DefaultLayout>
      
     </div>

@@ -2,10 +2,10 @@ import React from 'react'
 
 function DefaultLayout(props) {
   return (
-    <div className='header'>
+    <div className='header box-shadow1'>
             <div className="d-flex justify-content-between">
-                <h2>Tikka Rentals</h2>
-                <button>Users</button>
+                <h1>Tikka Rentals</h1>
+              
             </div>
             <div className="content">
                     {props.children}
