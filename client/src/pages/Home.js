@@ -1,9 +1,14 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React,{useEffect} from "react";
+import { useSelector,useDispatch } from "react-redux";
 import DefaultLayout from "../components/DefaultLayout";
-
+import { getAllCars } from "../redux/actions/carsActions";
 function Home(){
     const {cars} = useSelector(state => state.carReducer)
+const dispatch = useDispatch()
+
+useEffect(() =>{
+ dispatch(getAllCars())
+},[])
 return(
     <div>
         <DefaultLayout>
